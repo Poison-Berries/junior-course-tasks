@@ -1,4 +1,5 @@
 from os import environ
+from sys import stderr
 
 import flask
 
@@ -6,7 +7,13 @@ import flask
 app = flask.Flask(__name__)
 
 
-flags = [environ[f'flag{i}'] for i in range(7)]
+
+try:
+    flags = [environ[f'flag{i}'] for i in range(7)]
+except KeyError:
+    print("Environment variables flag0, flag1, ..., flag6 must be set. Exiting", file=stderr)
+    exit(1)
+
 
 
 @app.route('/')

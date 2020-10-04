@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.8-alpine
 
 COPY requirements.txt /requirements.txt
 RUN ["/usr/local/bin/pip3", "install", "-Ur", "requirements.txt"]

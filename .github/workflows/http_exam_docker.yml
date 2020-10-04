@@ -1,0 +1,30 @@
+name: Build docker image for http exam task
+
+on:
+  push:
+    branches:
+      - master
+
+    paths:
+      - ".github/workflows/http_exam_docker.yml"
+      - "http/2019-MiniExam/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: satackey/action-docker-layer-caching@v0.0.8
+        # Ignore the failure of a step and avoid terminating the job.
+        continue-on-error: true
+
+      - name: Build and push docker image
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: poison-berries/junior-course-tasks/http_exam
+          username: kolayne
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          workdir: http/2019-MiniExam

@@ -57,7 +57,7 @@ def six():
     if flask.request.headers.get('Host') == 'GoOgLe.com':
         return flags[5]
     else:
-        return 'Сложный таск<br><br>Вы зашли на ' + str(flask.request.headers.get('Host')) + ', чтобы получить флаг нужно зайти на GoOgLe.com (регистр важен)'
+        return 'Сложный таск<br><br>Вы зашли на ' + str(flask.request.headers.get('Host')) + ', чтобы получить флаг нужно зайти с GoOgLe.com (регистр важен)'
 
 @app.route('/6', methods=['GET', 'POST'])
 def seven():

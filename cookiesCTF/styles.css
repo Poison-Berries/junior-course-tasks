@@ -1,0 +1,43 @@
+body {
+	background: black;
+	font-family: 'Comfortaa', cursive;
+	color: white;
+}
+
+.link {
+  color: #f2ff80;
+  font-family: 'Comfortaa', cursive;
+}
+
+input[type=text] {
+	background: #9de3df;
+	color: black;
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 16;
+}
+
+input[type=submit] {
+	background: #91ff7a;
+	border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 12px 12px;
+    font-family: 'Comfortaa', cursive, bold;
+    font-size: 16;
+    font-weight: bold;
+}
+
+.form_design {
+	padding: 20px 10px;
+	background: #30302f;
+}
+
+.correct {
+	text-align: center;
+	color: #9fff8c;
+}
+
+.try_again {
+	text-align: center;
+	color: #ff7a7a;
+}

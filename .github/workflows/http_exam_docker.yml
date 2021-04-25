@@ -7,7 +7,7 @@ on:
 
     paths:
       - ".github/workflows/http_exam_docker.yml"
-      - "http/2019-MiniExam/**"
+      - "web/http-2019-MiniExam/**"
 
 jobs:
   build:
@@ -27,4 +27,4 @@ jobs:
           username: kolayne
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          workdir: http/2019-MiniExam
+          workdir: web/http-2019-MiniExam

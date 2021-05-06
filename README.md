@@ -14,7 +14,7 @@ If you want to add a task to this repository, you are supposed to create a Pull 
 
 - You should place all your tasks' files in a directory at a path of the following format: `/CATEGORY/YEAR-TOPIC[-OTHERINFO]`,
   for example, `/web/2021-cookies` or `/crypto/2019-base16,32,64,85-exam`
-  
+
 - Each of your directories inside category directories should have a `README.md` file with at least the following info:
   - Name and a brief description
   - Libraries needed for your task(s) to run, if any

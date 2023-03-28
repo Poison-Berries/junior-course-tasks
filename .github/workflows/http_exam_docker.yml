@@ -21,7 +21,7 @@ jobs:
         continue-on-error: true
 
       - name: Build and push docker image
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: poison-berries/junior-course-tasks/http_exam
           username: kolayne
